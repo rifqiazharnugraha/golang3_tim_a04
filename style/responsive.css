@@ -4,6 +4,10 @@
     margin-bottom: 50px;
   }
 
+  .card .slide.slide1 .content {
+    min-height: 265px;
+  }
+
   .product-heading h2 {
     font-size: 20px;
   }
@@ -12,5 +16,15 @@
 @media all and (max-width: 670px) {
   .product-lesson {
     width: 100%;
+  }
+}
+  
+@media (min-width: 425px) and (max-width: 670px) {
+  .product-lesson {
+    width: 100%;
+  }
+
+  .card .slide.slide1 .content {
+    min-height: 300px;
   }
 }
