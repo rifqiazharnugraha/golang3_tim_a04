@@ -87,3 +87,112 @@
     text-align: justify;
     text-justify: inter-word;
   }
+
+/* product css */
+.product-wrapper {
+  position: relative;
+  background-image: url(../img/product_bg.jpg);
+  background-size: contain;
+  text-align: center;
+}
+
+.heading h2 {
+  margin: 0;
+  font-size: 36px;
+}
+
+.lessons {
+  margin-top: -50px;
+}
+
+.product-lesson {
+  float: left;
+  width: 23%;
+  margin: 1%;
+}
+
+.card .icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #e5e6e8;
+  box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
+  border-radius: 15px;
+}
+
+.card .icon .fa {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  color: #fff;
+}
+
+.card .slide {
+  min-height: 200px;
+  transition: 0.5s;
+}
+
+.card .slide.slide1 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transition: .7s;
+  transform: translateY(100px);
+}
+
+.card:hover .slide.slide1{
+  transform: translateY(0px);
+}
+
+.card .slide.slide2 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: .8s;
+  transform: translateY(-100px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+  border-radius: 15px;
+}
+
+.card:hover .slide.slide2{
+  transform: translateY(0);
+}
+
+.card .slide.slide2::after{
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #2c73df;
+}
+
+.card .slide.slide1 .content img {
+  margin: 10px;
+}
+
+.card .slide.slide1 .content h3 {
+  margin: 0 0 10px 0;
+  padding: 0;
+  font-size: 24px;
+  text-align: center;
+  color: #414141;
+}
+
+.card .slide.slide2 .content p {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #414141;
+}
