@@ -1,0 +1,18 @@
+/* Untuk Tablet */
+@media all and (max-width: 1000px) {
+    .profile {
+      width: 50%;
+      margin-bottom: 50px;
+    }
+    
+    .heading h2 {
+      font-size: 20px;
+    }
+  }
+  
+  /* Untuk Smartphone */
+  @media all and (max-width: 670px) {
+    .profile {
+      width: 100%;
+    }
+  }
